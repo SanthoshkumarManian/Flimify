@@ -57,8 +57,9 @@ export const clearResult=()=>{
  export const renderResults=(Movies,page = 1,pageEnd = 7 )=>{
     const start=(page - 1 ) * pageEnd;
     const end = page * pageEnd;
- 
-    Movies.slice(start,end).forEach(renderMovies);
+    
+
+   Movies.slice(start,end).forEach(renderMovies);
 
     renderButton(page,Movies.length, pageEnd); 
  };

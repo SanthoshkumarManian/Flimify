@@ -6,7 +6,7 @@ export default class Search{
     }
 
     async getResult(){
-        const key="";
+        const key="d50f600c";
         try{
             const result=await axios(`http://www.omdbapi.com/?&apikey=${key}&s=${this.query}`);
             this.res=result.data.Search;
